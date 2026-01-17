@@ -9,47 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-        .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* space between product blocks */
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.product {
-    max-width: 200px;
-    text-align: center;
-}
-
-.product-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-}
-
         /* Body */
         body {
-    font-family: 'Merriweather', serif;
-    background-color: #edecd2;
-    color: #6a2c2e;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-
-    /* subtle pattern */
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0.05),
-        rgba(255, 255, 255, 0.05) 1px,
-        transparent 1px,
-        transparent 10px
-    );
-}
-
+            font-family: 'Merriweather', serif;
+            background-color: #edecd2; /* plain background */
+            color: #6a2c2e;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
         }
 
         /* Headings */
@@ -80,7 +47,6 @@
             margin: 20px auto 50px auto;
             max-width: 100%;
             height: auto;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
             border-radius: 8px; /* optional rounded corners */
         }
 
@@ -90,6 +56,28 @@
             border-top: 2px solid #6a2c2e;
             width: 60%;
             margin: 30px auto;
+        }
+
+        /* Products layout */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px; /* space between product blocks */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .product {
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -112,29 +100,30 @@
         to produce the tastiest eggs possible.
     </p>
 
+    <!-- Products -->
+    <h2>Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
+            <p>Dozen Fresh Eggs - $8</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
+            <p>Half Dozen Brown Eggs - $5</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
+            <p>Dozen Mixed Eggs - $9</p>
+        </div>
+
+    </div>
+
+    <!-- Divider between Products and Contact -->
     <hr>
-<hr>
-
-<h2>Products</h2>
-
-<div class="products">
-
-    <div class="product">
-        <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
-        <p>Dozen Fresh Eggs - $8</p>
-    </div>
-
-    <div class="product">
-        <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
-        <p>Half Dozen Brown Eggs - $5</p>
-    </div>
-
-    <div class="product">
-        <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
-        <p>Dozen Mixed Eggs - $9</p>
-    </div>
-
-</div>
 
     <!-- Contact -->
     <h2>Contact</h2>
