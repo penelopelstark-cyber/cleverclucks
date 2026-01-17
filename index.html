@@ -17,19 +17,6 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            .product-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
-}
-
-.product-img:hover {
-    transform: scale(1.05); /* slightly enlarge */
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* subtle shadow on hover */
-}
-
         }
 
         /* Headings */
@@ -91,6 +78,12 @@
             height: auto;
             border-radius: 8px;
             margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover animation */
+        }
+
+        .product-img:hover {
+            transform: scale(1.05); /* slightly enlarge on hover */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* subtle shadow on hover */
         }
     </style>
 </head>
@@ -120,34 +113,4 @@
     <hr>
 
     <!-- Products -->
-    <h2>Products</h2>
-
-    <div class="products">
-
-        <div class="product">
-            <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
-            <p>Dozen Fresh Eggs - $8</p>
-        </div>
-
-        <div class="product">
-            <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
-            <p>Half Dozen Brown Eggs - $5</p>
-        </div>
-
-        <div class="product">
-            <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
-            <p>Dozen Mixed Eggs - $9</p>
-        </div>
-
-    </div>
-
-    <!-- Divider between Products and Contact -->
-    <hr>
-
-    <!-- Contact -->
-    <h2>Contact</h2>
-    <p>Email: cleverclucks@gmail.com</p>
-    <p>Phone: 027 355 3770</p>
-
-</body>
-</html>
+    <h2>Pro
