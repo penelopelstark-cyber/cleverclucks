@@ -113,23 +113,42 @@
     <hr>
 
     <!-- Products -->
-    <h2>Products</h2>
+    /* Products layout */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 20px auto 40px;
+}
 
-    <div class="products">
+.product {
+    text-align: center;
+}
 
-        <div class="product">
-            <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
-            <p>Dozen Fresh Eggs - $8</p>
-        </div>
+.product-img {
+    width: 100%;
+    height: 140px; /* placeholder height */
+    object-fit: cover;
+    background-color: #ddd; /* placeholder color */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        <div class="product">
-            <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
-            <p>Half Dozen Brown Eggs - $5</p>
-        </div>
+.product-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
 
-        <div class="product">
-            <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
-            <p>Dozen Mixed Eggs - $9</p>
+/* Section labels */
+.product-row-title {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
         </div>
 
     </div>
