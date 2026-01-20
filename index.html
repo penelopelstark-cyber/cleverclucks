@@ -58,6 +58,32 @@
             margin: 30px auto;
         }
 
+        /* Product grid rows */
+.product-row {
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
         /* Products layout */
         .products {
             display: flex;
@@ -111,30 +137,87 @@
 
     <!-- Divider between About Us and Products -->
     <hr>
+<!-- Products -->
+<h2>Products</h2>
 
-    <!-- Products -->
-    <h2>Products</h2>
-
-    <div class="products">
-
+<!-- Dozen -->
+<div class="product-row">
+    <h2>Dozen</h2>
+    <div class="product-grid">
         <div class="product">
-            <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
-            <p>Dozen Fresh Eggs - $8</p>
+            <img src="eggs1.jpg" alt="Dozen eggs" class="product-img">
+            <p>Dozen Free-Range Eggs – $8</p>
         </div>
 
         <div class="product">
-            <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
-            <p>Half Dozen Brown Eggs - $5</p>
+            <img src="eggs1.jpg" alt="Dozen eggs" class="product-img">
+            <p>Dozen Brown Eggs – $8</p>
         </div>
 
         <div class="product">
-            <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
-            <p>Dozen Mixed Eggs - $9</p>
+            <img src="eggs1.jpg" alt="Dozen eggs" class="product-img">
+            <p>Dozen Mixed Eggs – $9</p>
         </div>
 
+        <div class="product">
+            <img src="eggs1.jpg" alt="Dozen eggs" class="product-img">
+            <p>Dozen Large Eggs – $9</p>
+        </div>
     </div>
+</div>
 
-    <!-- Divider between Products and Contact -->
+<!-- 18 Pack -->
+<div class="product-row">
+    <h2>18 Pack</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="eggs2.jpg" alt="18 pack eggs" class="product-img">
+            <p>18 Pack Free-Range – $12</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs2.jpg" alt="18 pack eggs" class="product-img">
+            <p>18 Pack Brown Eggs – $12</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs2.jpg" alt="18 pack eggs" class="product-img">
+            <p>18 Pack Mixed Eggs – $13</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs2.jpg" alt="18 pack eggs" class="product-img">
+            <p>18 Pack Large Eggs – $13</p>
+        </div>
+    </div>
+</div>
+
+<!-- Tray of 30 -->
+<div class="product-row">
+    <h2>Tray of 30</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="eggs3.jpg" alt="Tray of 30 eggs" class="product-img">
+            <p>Tray of 30 Free-Range – $20</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs3.jpg" alt="Tray of 30 eggs" class="product-img">
+            <p>Tray of 30 Brown Eggs – $20</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs3.jpg" alt="Tray of 30 eggs" class="product-img">
+            <p>Tray of 30 Mixed Eggs – $22</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs3.jpg" alt="Tray of 30 eggs" class="product-img">
+            <p>Tray of 30 Large Eggs – $22</p>
+        </div>
+    </div>
+</div>
+
     <hr>
 
     <!-- Contact -->
