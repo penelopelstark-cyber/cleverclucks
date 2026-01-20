@@ -9,15 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
+        /* Body */
         body {
             font-family: 'Merriweather', serif;
-            background-color: #edecd2;
+            background-color: #edecd2; /* plain background */
             color: #6a2c2e;
             text-align: center;
             margin: 0;
             padding: 20px;
         }
 
+        /* Headings */
         h1, h2 {
             font-family: 'Birthstone', cursive;
         }
@@ -33,19 +35,22 @@
             margin-bottom: 15px;
         }
 
+        /* Paragraphs */
         p {
             max-width: 600px;
             margin: 0 auto 15px;
         }
 
+        /* Logo */
         .logo {
             display: block;
             margin: 20px auto 50px auto;
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 8px; /* optional rounded corners */
         }
 
+        /* Horizontal divider */
         hr {
             border: 0;
             border-top: 2px solid #6a2c2e;
@@ -53,7 +58,90 @@
             margin: 30px auto;
         }
 
-        /* PRODUCTS */
+        /* Products layout */
         .products {
-            display: grid;
-            grid-template-columns:
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px; /* space between product blocks */
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .product {
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover animation */
+        }
+
+        .product-img:hover {
+            transform: scale(1.05); /* slightly enlarge on hover */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* subtle shadow on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <img src="cclogo.png" alt="Fresh free-range eggs from Clever Clucks" class="logo">
+
+    <!-- Main title -->
+    <h1>Clever Clucks</h1>
+
+    <!-- Introduction -->
+    <p>Fresh, free-range eggs from our family farm in Amberley, New Zealand.</p>
+
+    <!-- Divider between Introduction and About Us -->
+    <hr>
+
+    <!-- About Us -->
+    <h2>About Us</h2>
+    <p>
+        At Clever Clucks, we pride ourselves on raising happy, free-range chickens
+        to produce the tastiest eggs possible.
+    </p>
+
+    <!-- Divider between About Us and Products -->
+    <hr>
+
+    <!-- Products -->
+    <h2>Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="eggs1.jpg" alt="Fresh eggs - dozen" class="product-img">
+            <p>Dozen Fresh Eggs - $8</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs2.jpg" alt="Brown eggs - half dozen" class="product-img">
+            <p>Half Dozen Brown Eggs - $5</p>
+        </div>
+
+        <div class="product">
+            <img src="eggs3.jpg" alt="Mixed eggs - dozen" class="product-img">
+            <p>Dozen Mixed Eggs - $9</p>
+        </div>
+
+    </div>
+
+    <!-- Divider between Products and Contact -->
+    <hr>
+
+    <!-- Contact -->
+    <h2>Contact</h2>
+    <p>262 Grays Road, Amberley 7481 North Canterbury</p>
+    <p>Email: cleverclucks@gmail.com</p>
+    <p>Phone: 027 355 3770</p>
+
+</body>
+</html>
