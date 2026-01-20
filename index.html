@@ -7,7 +7,6 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <style>
         /* Body */
@@ -128,6 +127,24 @@
     transform: scale(1.1);
     opacity: 0.8;
 }
+        /* Facebook icon */
+.facebook-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.facebook-link svg {
+    width: 36px;
+    height: 36px;
+    fill: #6a2c2e; /* matches your site colour */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.facebook-link:hover svg {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 
     </style>
 </head>
@@ -243,11 +260,18 @@
     <p>262 Grays Road, Amberley 7481 North Canterbury</p>
     <p>Email: cleverclucks@gmail.com</p>
     <p>Phone: 027 355 3770</p>
-    <div class="social">
+    .facebook-link {
+    text-align: center;
+}
+   <div class="facebook-link">
     <a href="https://www.facebook.com/clever.clucks" target="_blank" aria-label="Clever Clucks on Facebook">
-        <span class="material-symbols-outlined">facebook</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.796.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+        </svg>
     </a>
 </div>
+
+    
 
 
 </body>
