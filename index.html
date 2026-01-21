@@ -98,18 +98,21 @@ h3 {
     position: relative;
 }
 
-/* Sold out label */
+/* Diagonal SOLD OUT ribbon */
 .sold-out {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 30px;
+    left: -45px;
+    width: 160px;
+    text-align: center;
     background-color: #6a2c2e;
     color: #edecd2;
-    padding: 6px 10px;
     font-size: 0.8em;
     font-weight: bold;
-    border-radius: 4px;
+    padding: 6px 0;
     text-transform: uppercase;
+    transform: rotate(-45deg);
+    pointer-events: none;
 }
 
 /* Grey out sold-out items */
